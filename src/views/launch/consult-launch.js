@@ -63,7 +63,7 @@ class ConsultLaunch extends React.Component {
     }
 
     edit = (id) => {
-        this.props.history.push('/registration-launch/${id}')
+        this.props.history.push('/registration-launch/{id}')
     }
 
     openConfirmation = (launch) => {

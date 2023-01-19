@@ -42,6 +42,7 @@ function Routes(props){
     )
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => (
     <AuthConsumer>
         { (context) => (<Routes isUserAuthenticated={context.isAuthenticated} />) }

@@ -22,7 +22,7 @@ class App extends React.Component {
       <AuthenticationProvider>
         <Navbar />
         <div className="container">    
-            <Routes />
+            <Routes/>
         </div>
       </AuthenticationProvider>
     )

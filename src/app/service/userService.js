@@ -5,7 +5,7 @@ import ValidationError from '../exception/ValidationError'
 class UserService extends ApiService {
 
     constructor(){
-        super('/api/user')
+        super('http://localhost:9090/api/users')
     }
 
     authenticate(credentials){
@@ -13,7 +13,7 @@ class UserService extends ApiService {
     }
 
     getUserBalance(id){
-        return this.get('/balance/${id}');
+        return this.get(`/balance/${id}`);
     }
 
     save(user){
